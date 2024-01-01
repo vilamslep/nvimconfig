@@ -37,6 +37,9 @@ packer.init({
 return packer.startup(function(use)
     use ("wbthomason/packer.nvim") -- Have packer manage itself
 
+    --plugins
+    use("ms-jpq/chadtree")
+
     if PACKER_BOOTSTRAP then
 	require("packer").sync()
     end
