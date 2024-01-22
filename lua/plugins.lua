@@ -40,6 +40,9 @@ return packer.startup(function(use)
     --plugins
     use("ms-jpq/chadtree")
 
+    use("neovim/nvim-lspconfig")
+
+
     if PACKER_BOOTSTRAP then
 	require("packer").sync()
     end
